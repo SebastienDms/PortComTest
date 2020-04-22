@@ -46,6 +46,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.tbDataIn = new System.Windows.Forms.TextBox();
+            this.btnRecevoir = new System.Windows.Forms.Button();
+            this.lblRecDatas = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbNomPort
@@ -221,11 +224,42 @@
             this.label5.TabIndex = 19;
             this.label5.Text = "Parité Bit";
             // 
+            // tbDataIn
+            // 
+            this.tbDataIn.Location = new System.Drawing.Point(572, 71);
+            this.tbDataIn.Multiline = true;
+            this.tbDataIn.Name = "tbDataIn";
+            this.tbDataIn.Size = new System.Drawing.Size(121, 125);
+            this.tbDataIn.TabIndex = 20;
+            // 
+            // btnRecevoir
+            // 
+            this.btnRecevoir.Location = new System.Drawing.Point(572, 221);
+            this.btnRecevoir.Name = "btnRecevoir";
+            this.btnRecevoir.Size = new System.Drawing.Size(121, 23);
+            this.btnRecevoir.TabIndex = 21;
+            this.btnRecevoir.Text = "R E C E V O I R";
+            this.btnRecevoir.UseVisualStyleBackColor = true;
+            this.btnRecevoir.Click += new System.EventHandler(this.btnRecevoir_Click);
+            // 
+            // lblRecDatas
+            // 
+            this.lblRecDatas.AutoSize = true;
+            this.lblRecDatas.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecDatas.Location = new System.Drawing.Point(569, 39);
+            this.lblRecDatas.Name = "lblRecDatas";
+            this.lblRecDatas.Size = new System.Drawing.Size(164, 18);
+            this.lblRecDatas.TabIndex = 22;
+            this.lblRecDatas.Text = "Réception des données";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblRecDatas);
+            this.Controls.Add(this.btnRecevoir);
+            this.Controls.Add(this.tbDataIn);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -269,6 +303,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox tbDataIn;
+        private System.Windows.Forms.Button btnRecevoir;
+        private System.Windows.Forms.Label lblRecDatas;
     }
 }
 

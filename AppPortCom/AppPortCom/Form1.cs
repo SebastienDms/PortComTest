@@ -14,6 +14,7 @@ namespace AppPortCom
     public partial class Form1 : Form
     {
         private string donnees;
+        private string donneesIn;
         public Form1()
         {
             InitializeComponent();
@@ -60,6 +61,12 @@ namespace AppPortCom
                 donnees = tbData.Text;
                 serialPort1.Write(donnees);
             }
+        }
+
+        private void btnRecevoir_Click(object sender, EventArgs e)
+        {
+            donneesIn = serialPort1.ReadExisting();
+            tbDataIn.Text = donneesIn;
         }
     }
 }
